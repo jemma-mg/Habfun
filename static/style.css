@@ -132,7 +132,7 @@ h2 {
 
 .btn{
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px;
   background: #ff5a3c;
   color: #fff;
@@ -218,4 +218,21 @@ h2 {
 .start_btn a{
   text-decoration: none;
   color: #fff;
+}
+
+.delete{
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px;
+  padding-right: 30%;
+}
+
+.delete-btn{
+  background-color: #ff5a3c;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }

@@ -33,7 +33,7 @@ function listHabits(habit = [], habitsList) {
             <label for="habit${i}"><span>${habit.reps}/${habit.totalCounts} ${
         habit.timeframe
       }</span> ${habit.text}</label>
-        <button class="delete" data-index=${i} id="delete${i}">Delete</button>
+        <div class="delete-btn"><button class="delete" data-index=${i} id="delete${i}">Delete</button></div>
         </li>
         `;
     })
