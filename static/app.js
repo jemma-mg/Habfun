@@ -25,17 +25,13 @@ function addHabit(e) {
 function listHabits(habit = [], habitsList) {
   habitsList.innerHTML = habits
     .map((habit, i) => {
-      return `
-            <li>
-            <input type="checkbox" data-index=${i} id="habit${i}" ${
-        habit.completed ? "checked" : ""
-      } />
-            <label for="habit${i}"><span>${habit.reps}/${habit.totalCounts} ${
-        habit.timeframe
-      }</span> ${habit.text}</label>
+      return `<div class="habit-tile">
+        <input type="checkbox" data-index=${i} id="habit${i}" ${habit.completed ? "checked" : ""} />
+        <label for="habit${i}"> <div class="level">${habit.reps}/${habit.totalCounts}</div></label>
+        <label for="habit${i}"> ${habit.timeframe}</label>
+        <label for="habit${i}"> <div class="level"> ${habit.text}</div></label>
         <div class="delete-btn"><button class="delete" data-index=${i} id="delete${i}">Delete</button></div>
-        </li>
-        `;
+        </div> `;
     })
     .join("");
 }
