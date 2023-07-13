@@ -248,6 +248,8 @@ h2 {
   color: #333;
   font-weight: 500;
   font-size: 1.5rem;
+  display: inline;
+  padding-left: 4rem;
 }
 /* 
 .flex{
